@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
+import { ProdComponent } from './prod/prod.component';
 import { HttpModule} from '@angular/http';
 import { hoverDirective } from './hover.directive';
 
@@ -12,7 +13,9 @@ import { hoverDirective } from './hover.directive';
   declarations: [
     AppComponent,
     UserComponent,
-    hoverDirective
+    ProdComponent,
+    hoverDirective,
+    
   ],
   imports: [
     BrowserModule,

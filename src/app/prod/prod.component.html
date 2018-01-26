@@ -1,0 +1,21 @@
+ <div class="col s3" >
+          <div class="card" appHover>
+            <div class="card-image">
+              <img src="{{prod.img}}">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content" >
+              <p>{{prod.name}}</p>
+              <p class="both" *ngIf="isBoth">В корзине</p>
+            </div>
+            <div class="card-action">
+             <a
+              (click)="pres()" 
+              class="waves-effect waves-light btn">{{prod.price}}</a>
+            </div>
+          </div>
+        </div>        
+
+
+
+        

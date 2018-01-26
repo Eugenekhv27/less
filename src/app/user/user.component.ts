@@ -11,6 +11,7 @@ export class UserComponent{
 	@Input() user;
 
 	isMarked = false;
+	
 
 	onClick(){
 		if(this.isMarked){

@@ -1,9 +1,13 @@
 <div class="container">
+	<div class="row">
+		<p>В корзине {{clicks}} товаров</p>
+	</div>
       <div class="row">
-          <app-user
-          *ngFor="let u of users"
-          [user]="u"
-          ></app-user>
+
+          <app-prod 
+          (onChanged)="onChanged($event)" *ngFor="let p of prods" 
+          [prod]="p">          	
+          </app-prod>
       </div>
 </div>
   
